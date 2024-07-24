@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "l0j7uk+oJekuanb0EuxDVB/7hT9XgH7+uA/VDkAzONw=",
+  "Source": "AzureOpenAI",
+  "BasePath": "_content/AzureOpenAI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
