@@ -44,3 +44,4 @@ D:\Azure\AzureOpenAI\AzureOpenAI\obj\Debug\net6.0\refint\AzureOpenAI.dll
 D:\Azure\AzureOpenAI\AzureOpenAI\obj\Debug\net6.0\AzureOpenAI.pdb
 D:\Azure\AzureOpenAI\AzureOpenAI\obj\Debug\net6.0\AzureOpenAI.genruntimeconfig.cache
 D:\Azure\AzureOpenAI\AzureOpenAI\obj\Debug\net6.0\ref\AzureOpenAI.dll
+D:\Azure\AzureOpenAI\AzureOpenAI\bin\Debug\net6.0\AzureOpenAI.staticwebassets.runtime.json

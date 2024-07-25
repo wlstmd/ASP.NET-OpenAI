@@ -23,6 +23,16 @@ builder.Services.AddSingleton(sp =>
 
 builder.Services.AddSingleton<ChatService>();
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll", builder =>
+    {
+        builder.AllowAnyOrigin()
+               .AllowAnyMethod()
+               .AllowAnyHeader();
+    });
+});
+
 var app = builder.Build();
 
 if (app.Environment.IsDevelopment())
@@ -33,6 +43,9 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseAuthorization();
+app.UseCors("AllowAll");
 app.MapControllers();
+
+app.UseStaticFiles();
 
 app.Run();

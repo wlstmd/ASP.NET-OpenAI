@@ -1,6 +1,5 @@
 using Microsoft.SemanticKernel;
 using Microsoft.SemanticKernel.ChatCompletion;
-using System.Text;
 
 namespace AzureOpenAI.Services;
 

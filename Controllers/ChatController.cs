@@ -1,6 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
 using AzureOpenAI.Services;
-using AzureOpenAI.Models;
 
 namespace AzureOpenAI.Controllers;
 
@@ -15,17 +14,17 @@ public class ChatController : ControllerBase
         _chatService = chatService;
     }
 
-    [HttpPost]
-    public async Task<ActionResult<string>> PostChat([FromBody] ChatMessage message)
+    [HttpGet]
+    public async Task<ActionResult<string>> GetChat([FromQuery] string message)
     {
-        if (message == null || string.IsNullOrEmpty(message.Content))
+        if (string.IsNullOrEmpty(message))
         {
             return BadRequest("Message content cannot be null or empty.");
         }
 
         try
         {
-            var response = await _chatService.GetResponseAsync(message.Content);
+            var response = await _chatService.GetResponseAsync(message);
             return Ok(response);
         }
         catch (Exception ex)

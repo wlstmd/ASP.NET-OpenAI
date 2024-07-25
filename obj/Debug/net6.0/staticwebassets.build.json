@@ -1,11 +1,37 @@
 {
   "Version": 1,
-  "Hash": "l0j7uk+oJekuanb0EuxDVB/7hT9XgH7+uA/VDkAzONw=",
+  "Hash": "bNS8LhKlGHN3pZ+Lh9fgBnjgX3UPpRbpRJ3TliqBgRE=",
   "Source": "AzureOpenAI",
   "BasePath": "_content/AzureOpenAI",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "AzureOpenAI\\wwwroot",
+      "Source": "AzureOpenAI",
+      "ContentRoot": "D:\\Azure\\AzureOpenAI\\AzureOpenAI\\wwwroot\\",
+      "BasePath": "_content/AzureOpenAI",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "D:\\Azure\\AzureOpenAI\\AzureOpenAI\\wwwroot\\index.html",
+      "SourceId": "AzureOpenAI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Azure\\AzureOpenAI\\AzureOpenAI\\wwwroot\\",
+      "BasePath": "_content/AzureOpenAI",
+      "RelativePath": "index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    }
+  ]
 }
